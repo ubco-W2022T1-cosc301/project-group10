@@ -24,7 +24,7 @@ This data set was provided by FiveThirtyEight and is a forecast of the 2021-2022
 
 - Person 1: one sentence about you!
 - Person 2: one sentence about you!
-- Person 3: one sentence about you!
+- Andrei Zipis: Third year computer science student who hopes the Canucks will win a Stanley cup in his lifetime!
 
 ## Images
 
