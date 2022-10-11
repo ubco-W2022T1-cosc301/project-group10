@@ -23,7 +23,7 @@ This data set was provided by FiveThirtyEight and is a forecast of the 2021-2022
 **Please remember to update this section**
 
 - Jordan Colledge: A fourth-year computer science major and writer, who knows his optimism for the 2022-23 Vancouver Canucks is probably misplaced.
-- Person 2: one sentence about you!
+- Jake Daongam: Fourth year computer science student and Habs fan praying for another miracle.
 - Andrei Zipis: Third year computer science student who hopes the Canucks will win a Stanley cup in his lifetime!
 
 ## Images
