@@ -21,6 +21,8 @@ This data set was provided by FiveThirtyEight and is a forecast of the 2021-2022
 
 Supplementary data for the distance between NHL cities has been provided by deep13.xyz. The data set, very simply, is a 32-by-32 table containing the distances between each NHL city and each of the others, in kilometers. The distance is "as the crow flies," based on the geographic coordinates of each NHL arena. The source itself states that the coordinates are "according to the internet, which is never wrong," which raises some slight concerns about the authenticity of the data; however, randomly chosen pairs of cities have accurate distances according to a Google Maps check.
 
+Supplementary data for the average NHL attendance has been provided by statista.com with the original data coming from ESPN.com in July of 2022. The data shows average attendance of every NHL team for the 2021-2022 season.
+
 ## Team Members
 
 
@@ -52,5 +54,7 @@ NOTE: At time of writing, the above data source still contains information on th
 https://projects.fivethirtyeight.com/nhl-api/nhl_elo.csv
 
 NHL City Distance Data Source: https://www.deep13.xyz/nhldistance
+
+NHL Average Attendance Data Source: https://www.statista.com/statistics/193749/regular-season-home-attendance-of-national-hockey-league-teams-in-2010/
 
 NOTE: The data from this page was simply copy-and-pasted into Microsoft Excel, then saved as a CSV file.
