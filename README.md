@@ -1,16 +1,17 @@
 # Group 10 - Analyzing NHL Predictions
 
-**Please remember to update this section**
-
-- Your title can change over time.
 
 ## Milestones
 
-Details for Milestone are available on Canvas (left sidebar, Course Project).
+  
+- Milestone 1 ✔
+- Milestone 2 ✔
+- Milestone 3
+- Milestone 4
+- Milestone 5
 
 ## Describe your topic/interest in about 150-200 words
-
-**Please remember to update this section**
+  
 
 Our topic at its broadest is simply "hockey," but that's not a very helpful description. More specifically, we're interested in analyzing a few trends in National Hockey League games that we feel may (or demonstrably *do*) have an effect on the outcomes of games -- home ice advantage, travel time, and the effect of intra-divisional matchups on the total score of a game. Sports as a source of data isn't entirely new; baseball is perhaps most famous for fans' obsessive tracking and analysis of game data. But hockey is equally valuable for data analysis, and at any rate it interests our group much more than baseball. In our analytics project, we hope to show whether travel time had any significant impact on teams' records last season, as well as potentially reconfirming the value of a "home advantage." Seeing the potential effect of divisional matchups on games is an interesting topic to us as well, as the four-point swing in a playoff race is often said to incentivize teams to push harder and possibly score higher. A dashboard could absolutely be built for this -- while some (e.g. home ice advantage) may not be especially interesting to look at in a dashboard, visualizations for the "net change in win rate, by distance from home city" could drive a lot of interest.
 
@@ -22,19 +23,17 @@ Supplementary data for the distance between NHL cities has been provided by deep
 
 ## Team Members
 
-**Please remember to update this section**
 
 - Jordan Colledge: A fourth-year computer science major and writer, who knows his optimism for the 2022-23 Vancouver Canucks is probably misplaced.
-- Person 2: one sentence about you!
+- Jake Daongam: Fourth year computer science student and Habs fan praying for another miracle.
 - Andrei Zipis: Third year computer science student who hopes the Canucks will win a Stanley cup in his lifetime!
 
 ## Images
 
-**Please remember to update this section and remove the test image!**
 
 {You can use this area for any images you want to include}
 
-<img src ="images/test.png" width="100px">
+![Ice Hockey](images/ice_hockey1.jpg)
 
 ## References
 
@@ -43,6 +42,10 @@ Supplementary data for the distance between NHL cities has been provided by deep
 {Add your credits, acknowledgements, references, or citations **including a link to the data source** here}
 
 Data Source: https://projects.fivethirtyeight.com/nhl-api/nhl_elo_latest.csv
+
+Image Sources:  
+
+- ice_hockey1: https://pixabay.com/photos/ice-hockey-sports-puck-game-4381206/  License: Pixabay License
 
 NOTE: At time of writing, the above data source still contains information on the 2021-22 season. However, in the future it's expected to be replaced with the FiveThirtyEight predictions for the 2022-23 season. After that time, the data used for this will need to be extracted from the following link:
 
