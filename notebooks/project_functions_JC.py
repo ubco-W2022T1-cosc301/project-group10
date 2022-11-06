@@ -5,13 +5,11 @@ def load_and_process(path):
 
     # Load data, drop unused data
     df1 = pd.read_csv(path)
-    df1 = (
-        df1
-        .drop(df1[df1.playoff != 0].index)
-        .drop(columns=["season","playoff"])
-        .drop(columns=df1.columns[8:15])
-        .drop(columns=["home_team_postgame_rating","away_team_postgame_rating","game_quality_rating","game_importance_rating","game_overall_rating"])
-    df.drop(columns=["neutral","status"])
+    df1.drop(df1[df1.playoff != 0].index)
+    df1.drop(columns=["season","playoff"])
+    df1.drop(columns=df1.columns[8:15])
+    df1.drop(columns=["home_team_postgame_rating","away_team_postgame_rating","game_quality_rating", "game_importance_rating","game_overall_rating"])
+    df1.drop(columns=["neutral","status"])
     
     # Load table for distance
     df_distances = pd.read_csv("../data/raw/nhl_distances.csv")
@@ -25,8 +23,8 @@ def load_and_process(path):
     df_distances['Home'] = team_abbr
     
     # get new column for distances
-    home = list(df['home_team_abbr'])
-    away = list(df['away_team_abbr'])
+    home = list(df1['home_team_abbr'])
+    away = list(df1['away_team_abbr'])
     dists = []
     for i in range(len(home)):
         # this is ugly.
@@ -40,9 +38,9 @@ def load_and_process(path):
     # add new columns
     df2 = (
         df1
-        .assign(home_team_diff=home_team_score-away_team_score)
-        .assign(away_team_diff=away_team_score-home_team_score)
+        .assign(home_team_diff=df1["home_team_score"]-df1["away_team_score"])
+        .assign(away_team_diff=df1["away_team_score"]-df1["home_team_score"])
     )
-    df2.insert(len(df.columns),"distance",tuple(dists),True)
+    df2.insert(len(df1.columns),"distance",tuple(dists),True)
     
     return df2
