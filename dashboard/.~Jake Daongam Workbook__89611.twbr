@@ -1,0 +1,1706 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20223.22.1005.1835                               -->
+<workbook original-version='18.1' source-build='2022.3.0 (20223.22.1005.1835)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='nhl_B2Boutlier_processed' inline='true' name='federated.0pt3l4010fcdba183cfog1snnfkd' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='nhl_B2Boutlier_processed' name='textscan.0q8w6h10ysdvrt1e65luo18m3d9o'>
+            <connection class='textscan' directory='Data/processed' filename='nhl_B2Boutlier_processed.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0q8w6h10ysdvrt1e65luo18m3d9o' name='nhl_B2Boutlier_processed.csv' table='[nhl_B2Boutlier_processed#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='abbr' ordinal='1' />
+            <column datatype='real' name='winrate' ordinal='2' />
+            <column datatype='string' name='type' ordinal='3' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0q8w6h10ysdvrt1e65luo18m3d9o' name='nhl_B2Boutlier_processed.csv' table='[nhl_B2Boutlier_processed#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='abbr' ordinal='1' />
+            <column datatype='real' name='winrate' ordinal='2' />
+            <column datatype='string' name='type' ordinal='3' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[nhl_B2Boutlier_processed.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_CA&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[nhl_B2Boutlier_processed.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl_B2Boutlier_processed.csv_637337881C7D4BC1A366AADB15BCF91A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>abbr</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[abbr]</local-name>
+            <parent-name>[nhl_B2Boutlier_processed.csv]</parent-name>
+            <remote-alias>abbr</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl_B2Boutlier_processed.csv_637337881C7D4BC1A366AADB15BCF91A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>winrate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[winrate]</local-name>
+            <parent-name>[nhl_B2Boutlier_processed.csv]</parent-name>
+            <remote-alias>winrate</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl_B2Boutlier_processed.csv_637337881C7D4BC1A366AADB15BCF91A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[type]</local-name>
+            <parent-name>[nhl_B2Boutlier_processed.csv]</parent-name>
+            <remote-alias>type</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl_B2Boutlier_processed.csv_637337881C7D4BC1A366AADB15BCF91A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[Type (group)]' role='dimension' type='nominal'>
+        <calculation class='categorical-bin' column='[type]' default='&quot;Other&quot;' new-bin='true'>
+          <bin default-name='true' value='&quot;reg&quot;'>
+            <value>&quot;reg&quot;</value>
+          </bin>
+        </calculation>
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='nhl_B2Boutlier_processed.csv' datatype='table' name='[__tableau_internal_object_id__].[nhl_B2Boutlier_processed.csv_637337881C7D4BC1A366AADB15BCF91A]' role='measure' type='quantitative' />
+      <column caption='Abbr' datatype='string' name='[abbr]' role='dimension' type='nominal' />
+      <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+      <column caption='Winrate' datatype='real' name='[winrate]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[Type (group)]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Other&quot;</bucket>
+            </map>
+            <map to='#f4d166'>
+              <bucket>&quot;reg&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Canada&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='nhl_B2Boutlier_processed.csv' id='nhl_B2Boutlier_processed.csv_637337881C7D4BC1A366AADB15BCF91A'>
+            <properties context=''>
+              <relation connection='textscan.0q8w6h10ysdvrt1e65luo18m3d9o' name='nhl_B2Boutlier_processed.csv' table='[nhl_B2Boutlier_processed#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='string' name='abbr' ordinal='1' />
+                  <column datatype='real' name='winrate' ordinal='2' />
+                  <column datatype='string' name='type' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='nhl_restdays_processed' inline='true' name='federated.0oqfjjg1j2jbx71cr7x3y0s2lor4' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='nhl_restdays_processed' name='textscan.0o60d2g1ll984k19mymot00c1n92'>
+            <connection class='textscan' directory='Data/processed' filename='nhl_restdays_processed.csv' password='' server='' />
+          </named-connection>
+          <named-connection caption='winrate_restDays' name='textscan.1dfjp311p9rg3g15ulfkl0fje9t6'>
+            <connection class='textscan' directory='Data/processed' filename='winrate_restDays.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0o60d2g1ll984k19mymot00c1n92' name='nhl_restdays_processed.csv' table='[nhl_restdays_processed#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='date' name='date' ordinal='1' />
+            <column datatype='string' name='ot' ordinal='2' />
+            <column datatype='string' name='home_team' ordinal='3' />
+            <column datatype='string' name='away_team' ordinal='4' />
+            <column datatype='string' name='home_team_abbr' ordinal='5' />
+            <column datatype='string' name='away_team_abbr' ordinal='6' />
+            <column datatype='real' name='home_team_pregame_rating' ordinal='7' />
+            <column datatype='real' name='away_team_pregame_rating' ordinal='8' />
+            <column datatype='real' name='home_team_winprob' ordinal='9' />
+            <column datatype='real' name='away_team_winprob' ordinal='10' />
+            <column datatype='real' name='overtime_prob' ordinal='11' />
+            <column datatype='real' name='home_team_expected_points' ordinal='12' />
+            <column datatype='real' name='away_team_expected_points' ordinal='13' />
+            <column datatype='integer' name='home_team_score' ordinal='14' />
+            <column datatype='integer' name='away_team_score' ordinal='15' />
+            <column datatype='real' name='home_team_postgame_rating' ordinal='16' />
+            <column datatype='real' name='away_team_postgame_rating' ordinal='17' />
+            <column datatype='integer' name='game_quality_rating' ordinal='18' />
+            <column datatype='integer' name='game_importance_rating' ordinal='19' />
+            <column datatype='integer' name='game_overall_rating' ordinal='20' />
+            <column datatype='string' name='team' ordinal='21' />
+            <column datatype='string' name='abbr' ordinal='22' />
+            <column datatype='integer' name='game_num' ordinal='23' />
+            <column datatype='date' name='last_game_date' ordinal='24' />
+            <column datatype='real' name='team_rating' ordinal='25' />
+            <column datatype='real' name='opposing_team_rating' ordinal='26' />
+            <column datatype='real' name='rating_diff' ordinal='27' />
+            <column datatype='integer' name='gf' ordinal='28' />
+            <column datatype='integer' name='ga' ordinal='29' />
+            <column datatype='real' name='rest_days' ordinal='30' />
+            <column datatype='string' name='game_outcome' ordinal='31' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0o60d2g1ll984k19mymot00c1n92' name='nhl_restdays_processed.csv' table='[nhl_restdays_processed#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='date' name='date' ordinal='1' />
+            <column datatype='string' name='ot' ordinal='2' />
+            <column datatype='string' name='home_team' ordinal='3' />
+            <column datatype='string' name='away_team' ordinal='4' />
+            <column datatype='string' name='home_team_abbr' ordinal='5' />
+            <column datatype='string' name='away_team_abbr' ordinal='6' />
+            <column datatype='real' name='home_team_pregame_rating' ordinal='7' />
+            <column datatype='real' name='away_team_pregame_rating' ordinal='8' />
+            <column datatype='real' name='home_team_winprob' ordinal='9' />
+            <column datatype='real' name='away_team_winprob' ordinal='10' />
+            <column datatype='real' name='overtime_prob' ordinal='11' />
+            <column datatype='real' name='home_team_expected_points' ordinal='12' />
+            <column datatype='real' name='away_team_expected_points' ordinal='13' />
+            <column datatype='integer' name='home_team_score' ordinal='14' />
+            <column datatype='integer' name='away_team_score' ordinal='15' />
+            <column datatype='real' name='home_team_postgame_rating' ordinal='16' />
+            <column datatype='real' name='away_team_postgame_rating' ordinal='17' />
+            <column datatype='integer' name='game_quality_rating' ordinal='18' />
+            <column datatype='integer' name='game_importance_rating' ordinal='19' />
+            <column datatype='integer' name='game_overall_rating' ordinal='20' />
+            <column datatype='string' name='team' ordinal='21' />
+            <column datatype='string' name='abbr' ordinal='22' />
+            <column datatype='integer' name='game_num' ordinal='23' />
+            <column datatype='date' name='last_game_date' ordinal='24' />
+            <column datatype='real' name='team_rating' ordinal='25' />
+            <column datatype='real' name='opposing_team_rating' ordinal='26' />
+            <column datatype='real' name='rating_diff' ordinal='27' />
+            <column datatype='integer' name='gf' ordinal='28' />
+            <column datatype='integer' name='ga' ordinal='29' />
+            <column datatype='real' name='rest_days' ordinal='30' />
+            <column datatype='string' name='game_outcome' ordinal='31' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[nhl_restdays_processed.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_CA&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[nhl_restdays_processed.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl_restdays_processed.csv_C793C39D6C114DF4BE7542E7ED7DE617]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[date]</local-name>
+            <parent-name>[nhl_restdays_processed.csv]</parent-name>
+            <remote-alias>date</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl_restdays_processed.csv_C793C39D6C114DF4BE7542E7ED7DE617]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ot</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ot]</local-name>
+            <parent-name>[nhl_restdays_processed.csv]</parent-name>
+            <remote-alias>ot</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl_restdays_processed.csv_C793C39D6C114DF4BE7542E7ED7DE617]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>home_team</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[home_team]</local-name>
+            <parent-name>[nhl_restdays_processed.csv]</parent-name>
+            <remote-alias>home_team</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl_restdays_processed.csv_C793C39D6C114DF4BE7542E7ED7DE617]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>away_team</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[away_team]</local-name>
+            <parent-name>[nhl_restdays_processed.csv]</parent-name>
+            <remote-alias>away_team</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl_restdays_processed.csv_C793C39D6C114DF4BE7542E7ED7DE617]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>home_team_abbr</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[home_team_abbr]</local-name>
+            <parent-name>[nhl_restdays_processed.csv]</parent-name>
+            <remote-alias>home_team_abbr</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl_restdays_processed.csv_C793C39D6C114DF4BE7542E7ED7DE617]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>away_team_abbr</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[away_team_abbr]</local-name>
+            <parent-name>[nhl_restdays_processed.csv]</parent-name>
+            <remote-alias>away_team_abbr</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl_restdays_processed.csv_C793C39D6C114DF4BE7542E7ED7DE617]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>home_team_pregame_rating</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[home_team_pregame_rating]</local-name>
+            <parent-name>[nhl_restdays_processed.csv]</parent-name>
+            <remote-alias>home_team_pregame_rating</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl_restdays_processed.csv_C793C39D6C114DF4BE7542E7ED7DE617]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>away_team_pregame_rating</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[away_team_pregame_rating]</local-name>
+            <parent-name>[nhl_restdays_processed.csv]</parent-name>
+            <remote-alias>away_team_pregame_rating</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl_restdays_processed.csv_C793C39D6C114DF4BE7542E7ED7DE617]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>home_team_winprob</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[home_team_winprob]</local-name>
+            <parent-name>[nhl_restdays_processed.csv]</parent-name>
+            <remote-alias>home_team_winprob</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl_restdays_processed.csv_C793C39D6C114DF4BE7542E7ED7DE617]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>away_team_winprob</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[away_team_winprob]</local-name>
+            <parent-name>[nhl_restdays_processed.csv]</parent-name>
+            <remote-alias>away_team_winprob</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl_restdays_processed.csv_C793C39D6C114DF4BE7542E7ED7DE617]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>overtime_prob</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[overtime_prob]</local-name>
+            <parent-name>[nhl_restdays_processed.csv]</parent-name>
+            <remote-alias>overtime_prob</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl_restdays_processed.csv_C793C39D6C114DF4BE7542E7ED7DE617]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>home_team_expected_points</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[home_team_expected_points]</local-name>
+            <parent-name>[nhl_restdays_processed.csv]</parent-name>
+            <remote-alias>home_team_expected_points</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl_restdays_processed.csv_C793C39D6C114DF4BE7542E7ED7DE617]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>away_team_expected_points</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[away_team_expected_points]</local-name>
+            <parent-name>[nhl_restdays_processed.csv]</parent-name>
+            <remote-alias>away_team_expected_points</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl_restdays_processed.csv_C793C39D6C114DF4BE7542E7ED7DE617]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>home_team_score</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[home_team_score]</local-name>
+            <parent-name>[nhl_restdays_processed.csv]</parent-name>
+            <remote-alias>home_team_score</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl_restdays_processed.csv_C793C39D6C114DF4BE7542E7ED7DE617]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>away_team_score</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[away_team_score]</local-name>
+            <parent-name>[nhl_restdays_processed.csv]</parent-name>
+            <remote-alias>away_team_score</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl_restdays_processed.csv_C793C39D6C114DF4BE7542E7ED7DE617]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>home_team_postgame_rating</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[home_team_postgame_rating]</local-name>
+            <parent-name>[nhl_restdays_processed.csv]</parent-name>
+            <remote-alias>home_team_postgame_rating</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl_restdays_processed.csv_C793C39D6C114DF4BE7542E7ED7DE617]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>away_team_postgame_rating</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[away_team_postgame_rating]</local-name>
+            <parent-name>[nhl_restdays_processed.csv]</parent-name>
+            <remote-alias>away_team_postgame_rating</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl_restdays_processed.csv_C793C39D6C114DF4BE7542E7ED7DE617]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>game_quality_rating</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[game_quality_rating]</local-name>
+            <parent-name>[nhl_restdays_processed.csv]</parent-name>
+            <remote-alias>game_quality_rating</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl_restdays_processed.csv_C793C39D6C114DF4BE7542E7ED7DE617]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>game_importance_rating</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[game_importance_rating]</local-name>
+            <parent-name>[nhl_restdays_processed.csv]</parent-name>
+            <remote-alias>game_importance_rating</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl_restdays_processed.csv_C793C39D6C114DF4BE7542E7ED7DE617]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>game_overall_rating</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[game_overall_rating]</local-name>
+            <parent-name>[nhl_restdays_processed.csv]</parent-name>
+            <remote-alias>game_overall_rating</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl_restdays_processed.csv_C793C39D6C114DF4BE7542E7ED7DE617]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>team</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[team]</local-name>
+            <parent-name>[nhl_restdays_processed.csv]</parent-name>
+            <remote-alias>team</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl_restdays_processed.csv_C793C39D6C114DF4BE7542E7ED7DE617]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>abbr</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[abbr]</local-name>
+            <parent-name>[nhl_restdays_processed.csv]</parent-name>
+            <remote-alias>abbr</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl_restdays_processed.csv_C793C39D6C114DF4BE7542E7ED7DE617]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>game_num</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[game_num]</local-name>
+            <parent-name>[nhl_restdays_processed.csv]</parent-name>
+            <remote-alias>game_num</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl_restdays_processed.csv_C793C39D6C114DF4BE7542E7ED7DE617]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>last_game_date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[last_game_date]</local-name>
+            <parent-name>[nhl_restdays_processed.csv]</parent-name>
+            <remote-alias>last_game_date</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl_restdays_processed.csv_C793C39D6C114DF4BE7542E7ED7DE617]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>team_rating</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[team_rating]</local-name>
+            <parent-name>[nhl_restdays_processed.csv]</parent-name>
+            <remote-alias>team_rating</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl_restdays_processed.csv_C793C39D6C114DF4BE7542E7ED7DE617]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>opposing_team_rating</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[opposing_team_rating]</local-name>
+            <parent-name>[nhl_restdays_processed.csv]</parent-name>
+            <remote-alias>opposing_team_rating</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl_restdays_processed.csv_C793C39D6C114DF4BE7542E7ED7DE617]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rating_diff</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[rating_diff]</local-name>
+            <parent-name>[nhl_restdays_processed.csv]</parent-name>
+            <remote-alias>rating_diff</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl_restdays_processed.csv_C793C39D6C114DF4BE7542E7ED7DE617]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gf</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[gf]</local-name>
+            <parent-name>[nhl_restdays_processed.csv]</parent-name>
+            <remote-alias>gf</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl_restdays_processed.csv_C793C39D6C114DF4BE7542E7ED7DE617]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ga</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ga]</local-name>
+            <parent-name>[nhl_restdays_processed.csv]</parent-name>
+            <remote-alias>ga</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl_restdays_processed.csv_C793C39D6C114DF4BE7542E7ED7DE617]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rest_days</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[rest_days]</local-name>
+            <parent-name>[nhl_restdays_processed.csv]</parent-name>
+            <remote-alias>rest_days</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl_restdays_processed.csv_C793C39D6C114DF4BE7542E7ED7DE617]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>game_outcome</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[game_outcome]</local-name>
+            <parent-name>[nhl_restdays_processed.csv]</parent-name>
+            <remote-alias>game_outcome</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl_restdays_processed.csv_C793C39D6C114DF4BE7542E7ED7DE617]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[Game Outcome (group) 1]' role='dimension' type='nominal'>
+        <calculation class='categorical-bin' column='[game_outcome]' new-bin='true'>
+          <bin default-name='true' value='&quot;L&quot;'>
+            <value>&quot;L&quot;</value>
+          </bin>
+          <bin default-name='true' value='&quot;OTL&quot;'>
+            <value>&quot;OTL&quot;</value>
+          </bin>
+          <bin default-name='true' value='&quot;W&quot;'>
+            <value>&quot;W&quot;</value>
+          </bin>
+        </calculation>
+      </column>
+      <column datatype='string' name='[Game Outcome (group)]' role='dimension' type='nominal'>
+        <calculation class='categorical-bin' column='[game_outcome]' new-bin='true'>
+          <bin default-name='true' value='&quot;L&quot;'>
+            <value>&quot;L&quot;</value>
+          </bin>
+          <bin default-name='true' value='&quot;OTL&quot;'>
+            <value>&quot;OTL&quot;</value>
+          </bin>
+          <bin default-name='true' value='&quot;W&quot;'>
+            <value>&quot;W&quot;</value>
+          </bin>
+        </calculation>
+      </column>
+      <column aggregation='None' caption='Rest Days (bin)' datatype='integer' name='[Rest Days (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='0' formula='[rest_days]' peg='0' size='1' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='nhl_restdays_processed.csv' datatype='table' name='[__tableau_internal_object_id__].[nhl_restdays_processed.csv_C793C39D6C114DF4BE7542E7ED7DE617]' role='measure' type='quantitative' />
+      <column caption='Abbr' datatype='string' name='[abbr]' role='dimension' type='nominal' />
+      <column caption='Away Team' datatype='string' name='[away_team]' role='dimension' type='nominal' />
+      <column caption='Away Team Abbr' datatype='string' name='[away_team_abbr]' role='dimension' type='nominal' />
+      <column caption='Away Team Expected Points' datatype='real' name='[away_team_expected_points]' role='measure' type='quantitative' />
+      <column caption='Away Team Postgame Rating' datatype='real' name='[away_team_postgame_rating]' role='measure' type='quantitative' />
+      <column caption='Away Team Pregame Rating' datatype='real' name='[away_team_pregame_rating]' role='measure' type='quantitative' />
+      <column caption='Away Team Score' datatype='integer' name='[away_team_score]' role='measure' type='quantitative' />
+      <column caption='Away Team Winprob' datatype='real' name='[away_team_winprob]' role='measure' type='quantitative' />
+      <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+      <column caption='Ga' datatype='integer' name='[ga]' role='measure' type='quantitative' />
+      <column caption='Game Importance Rating' datatype='integer' name='[game_importance_rating]' role='measure' type='quantitative' />
+      <column caption='Game Num' datatype='integer' name='[game_num]' role='dimension' type='ordinal' />
+      <column caption='Game Outcome' datatype='string' name='[game_outcome]' role='dimension' type='nominal' />
+      <column caption='Game Overall Rating' datatype='integer' name='[game_overall_rating]' role='measure' type='quantitative' />
+      <column caption='Game Quality Rating' datatype='integer' name='[game_quality_rating]' role='measure' type='quantitative' />
+      <column caption='Gf' datatype='integer' name='[gf]' role='measure' type='quantitative' />
+      <column caption='Home Team' datatype='string' name='[home_team]' role='dimension' type='nominal' />
+      <column caption='Home Team Abbr' datatype='string' name='[home_team_abbr]' role='dimension' type='nominal' />
+      <column caption='Home Team Expected Points' datatype='real' name='[home_team_expected_points]' role='measure' type='quantitative' />
+      <column caption='Home Team Postgame Rating' datatype='real' name='[home_team_postgame_rating]' role='measure' type='quantitative' />
+      <column caption='Home Team Pregame Rating' datatype='real' name='[home_team_pregame_rating]' role='measure' type='quantitative' />
+      <column caption='Home Team Score' datatype='integer' name='[home_team_score]' role='measure' type='quantitative' />
+      <column caption='Home Team Winprob' datatype='real' name='[home_team_winprob]' role='measure' type='quantitative' />
+      <column caption='Last Game Date' datatype='date' name='[last_game_date]' role='dimension' type='ordinal' />
+      <column caption='Opposing Team Rating' datatype='real' name='[opposing_team_rating]' role='measure' type='quantitative' />
+      <column caption='Ot' datatype='string' name='[ot]' role='dimension' type='nominal' />
+      <column caption='Overtime Prob' datatype='real' name='[overtime_prob]' role='measure' type='quantitative' />
+      <column caption='Rating Diff' datatype='real' name='[rating_diff]' role='measure' type='quantitative' />
+      <column caption='Rest Days' datatype='real' name='[rest_days]' role='measure' type='quantitative' />
+      <column caption='Team' datatype='string' name='[team]' role='dimension' type='nominal' />
+      <column caption='Team Rating' datatype='real' name='[team_rating]' role='measure' type='quantitative' />
+      <column-instance column='[game_outcome]' derivation='None' name='[none:game_outcome:nk]' pivot='key' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:game_outcome:nk]' type='palette'>
+            <map to='#8cd17d'>
+              <bucket>&quot;W&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;L&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;OTL&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[Game Outcome (group)]' type='palette'>
+            <map to='#8cd17d'>
+              <bucket>&quot;W&quot;</bucket>
+            </map>
+            <map to='#a2a2a2'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;L&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;OTL&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[Game Outcome (group) 1]' type='palette'>
+            <map to='#8cd17d'>
+              <bucket>&quot;W&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;L&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;OTL&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Canada&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='nhl_restdays_processed.csv' id='nhl_restdays_processed.csv_C793C39D6C114DF4BE7542E7ED7DE617'>
+            <properties context=''>
+              <relation connection='textscan.0o60d2g1ll984k19mymot00c1n92' name='nhl_restdays_processed.csv' table='[nhl_restdays_processed#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='date' name='date' ordinal='1' />
+                  <column datatype='string' name='ot' ordinal='2' />
+                  <column datatype='string' name='home_team' ordinal='3' />
+                  <column datatype='string' name='away_team' ordinal='4' />
+                  <column datatype='string' name='home_team_abbr' ordinal='5' />
+                  <column datatype='string' name='away_team_abbr' ordinal='6' />
+                  <column datatype='real' name='home_team_pregame_rating' ordinal='7' />
+                  <column datatype='real' name='away_team_pregame_rating' ordinal='8' />
+                  <column datatype='real' name='home_team_winprob' ordinal='9' />
+                  <column datatype='real' name='away_team_winprob' ordinal='10' />
+                  <column datatype='real' name='overtime_prob' ordinal='11' />
+                  <column datatype='real' name='home_team_expected_points' ordinal='12' />
+                  <column datatype='real' name='away_team_expected_points' ordinal='13' />
+                  <column datatype='integer' name='home_team_score' ordinal='14' />
+                  <column datatype='integer' name='away_team_score' ordinal='15' />
+                  <column datatype='real' name='home_team_postgame_rating' ordinal='16' />
+                  <column datatype='real' name='away_team_postgame_rating' ordinal='17' />
+                  <column datatype='integer' name='game_quality_rating' ordinal='18' />
+                  <column datatype='integer' name='game_importance_rating' ordinal='19' />
+                  <column datatype='integer' name='game_overall_rating' ordinal='20' />
+                  <column datatype='string' name='team' ordinal='21' />
+                  <column datatype='string' name='abbr' ordinal='22' />
+                  <column datatype='integer' name='game_num' ordinal='23' />
+                  <column datatype='date' name='last_game_date' ordinal='24' />
+                  <column datatype='real' name='team_rating' ordinal='25' />
+                  <column datatype='real' name='opposing_team_rating' ordinal='26' />
+                  <column datatype='real' name='rating_diff' ordinal='27' />
+                  <column datatype='integer' name='gf' ordinal='28' />
+                  <column datatype='integer' name='ga' ordinal='29' />
+                  <column datatype='real' name='rest_days' ordinal='30' />
+                  <column datatype='string' name='game_outcome' ordinal='31' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Back-to-Back Outcomes by team'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='nhl_restdays_processed' name='federated.0oqfjjg1j2jbx71cr7x3y0s2lor4' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0oqfjjg1j2jbx71cr7x3y0s2lor4'>
+            <column aggregation='None' caption='Rest Days (bin)' datatype='integer' name='[Rest Days (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='0' formula='[rest_days]' peg='0' size='1' />
+            </column>
+            <column caption='Abbr' datatype='string' name='[abbr]' role='dimension' type='nominal' />
+            <column caption='Game Outcome' datatype='string' name='[game_outcome]' role='dimension' type='nominal' />
+            <column-instance column='[Rest Days (bin)]' derivation='None' name='[none:Rest Days (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[abbr]' derivation='None' name='[none:abbr:nk]' pivot='key' type='nominal' />
+            <column-instance column='[game_outcome]' derivation='None' name='[none:game_outcome:nk]' pivot='key' type='nominal' />
+            <column caption='Rest Days' datatype='real' name='[rest_days]' role='measure' type='quantitative' />
+            <column-instance column='[rest_days]' derivation='Sum' name='[sum:rest_days:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0oqfjjg1j2jbx71cr7x3y0s2lor4].[none:Rest Days (bin):ok]'>
+            <groupfilter function='member' level='[none:Rest Days (bin):ok]' member='1' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0oqfjjg1j2jbx71cr7x3y0s2lor4].[none:Rest Days (bin):ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0oqfjjg1j2jbx71cr7x3y0s2lor4].[sum:rest_days:qk]' scope='rows' value='Number of Games' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='height' field='[federated.0oqfjjg1j2jbx71cr7x3y0s2lor4].[none:Rest Days (bin):ok]' value='21' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.0oqfjjg1j2jbx71cr7x3y0s2lor4].[none:Rest Days (bin):ok]' value='false' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0oqfjjg1j2jbx71cr7x3y0s2lor4].[none:game_outcome:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0oqfjjg1j2jbx71cr7x3y0s2lor4].[sum:rest_days:qk]</rows>
+        <cols>([federated.0oqfjjg1j2jbx71cr7x3y0s2lor4].[none:Rest Days (bin):ok] / [federated.0oqfjjg1j2jbx71cr7x3y0s2lor4].[none:abbr:nk])</cols>
+      </table>
+      <simple-id uuid='{8BEA170D-7DFA-4663-B033-16D6850CF673}' />
+    </worksheet>
+    <worksheet name='Back-to-Back Winrate Outliers'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='nhl_B2Boutlier_processed' name='federated.0pt3l4010fcdba183cfog1snnfkd' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0pt3l4010fcdba183cfog1snnfkd'>
+            <column datatype='string' name='[Type (group)]' role='dimension' type='nominal'>
+              <calculation class='categorical-bin' column='[type]' default='&quot;Other&quot;' new-bin='true'>
+                <bin default-name='true' value='&quot;reg&quot;'>
+                  <value>&quot;reg&quot;</value>
+                </bin>
+              </calculation>
+            </column>
+            <column caption='Abbr' datatype='string' name='[abbr]' role='dimension' type='nominal' />
+            <column-instance column='[abbr]' derivation='None' name='[none:abbr:nk]' pivot='key' type='nominal' />
+            <column-instance column='[type]' derivation='None' name='[none:type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[winrate]' derivation='Sum' name='[sum:winrate:qk]' pivot='key' type='quantitative' />
+            <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+            <column caption='Winrate' datatype='real' name='[winrate]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0pt3l4010fcdba183cfog1snnfkd].[Type (group)]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0pt3l4010fcdba183cfog1snnfkd].[sum:winrate:qk]</rows>
+        <cols>([federated.0pt3l4010fcdba183cfog1snnfkd].[none:abbr:nk] / [federated.0pt3l4010fcdba183cfog1snnfkd].[none:type:nk])</cols>
+      </table>
+      <simple-id uuid='{5FD135F8-B126-4A79-AAF5-3A94504BE36F}' />
+    </worksheet>
+    <worksheet name='Outcome of games with x days since last game'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='nhl_restdays_processed' name='federated.0oqfjjg1j2jbx71cr7x3y0s2lor4' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0oqfjjg1j2jbx71cr7x3y0s2lor4'>
+            <column datatype='string' name='[Game Outcome (group)]' role='dimension' type='nominal'>
+              <calculation class='categorical-bin' column='[game_outcome]' new-bin='true'>
+                <bin default-name='true' value='&quot;L&quot;'>
+                  <value>&quot;L&quot;</value>
+                </bin>
+                <bin default-name='true' value='&quot;OTL&quot;'>
+                  <value>&quot;OTL&quot;</value>
+                </bin>
+                <bin default-name='true' value='&quot;W&quot;'>
+                  <value>&quot;W&quot;</value>
+                </bin>
+              </calculation>
+            </column>
+            <column aggregation='None' caption='Rest Days (bin)' datatype='integer' name='[Rest Days (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='0' formula='[rest_days]' peg='0' size='1' />
+            </column>
+            <column-instance column='[rest_days]' derivation='Count' name='[cnt:rest_days:qk]' pivot='key' type='quantitative' />
+            <column caption='Game Outcome' datatype='string' name='[game_outcome]' role='dimension' type='nominal' />
+            <column-instance column='[Rest Days (bin)]' derivation='None' name='[none:Rest Days (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[game_outcome]' derivation='None' name='[none:game_outcome:nk]' pivot='key' type='nominal' />
+            <column caption='Rest Days' datatype='real' name='[rest_days]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0oqfjjg1j2jbx71cr7x3y0s2lor4].[none:Rest Days (bin):ok]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Rest Days (bin):ok]' member='1' />
+              <groupfilter function='member' level='[none:Rest Days (bin):ok]' member='2' />
+              <groupfilter function='member' level='[none:Rest Days (bin):ok]' member='3' />
+              <groupfilter function='member' level='[none:Rest Days (bin):ok]' member='4' />
+              <groupfilter function='member' level='[none:Rest Days (bin):ok]' member='5' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0oqfjjg1j2jbx71cr7x3y0s2lor4].[none:Rest Days (bin):ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='height' field='[federated.0oqfjjg1j2jbx71cr7x3y0s2lor4].[none:game_outcome:nk]' value='20' />
+            <format attr='title' class='0' field='[federated.0oqfjjg1j2jbx71cr7x3y0s2lor4].[cnt:rest_days:qk]' scope='rows' value='Number of Games' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.0oqfjjg1j2jbx71cr7x3y0s2lor4].[none:game_outcome:nk]' value='false' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0oqfjjg1j2jbx71cr7x3y0s2lor4].[cnt:rest_days:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0oqfjjg1j2jbx71cr7x3y0s2lor4].[Game Outcome (group)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#59a14f' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0oqfjjg1j2jbx71cr7x3y0s2lor4].[cnt:rest_days:qk]</rows>
+        <cols>([federated.0oqfjjg1j2jbx71cr7x3y0s2lor4].[none:Rest Days (bin):ok] / [federated.0oqfjjg1j2jbx71cr7x3y0s2lor4].[none:game_outcome:nk])</cols>
+      </table>
+      <simple-id uuid='{0CC758A6-4D29-4907-9658-6CD631B8940C}' />
+    </worksheet>
+    <worksheet name='Sum of games with x days since last game'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='nhl_restdays_processed' name='federated.0oqfjjg1j2jbx71cr7x3y0s2lor4' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0oqfjjg1j2jbx71cr7x3y0s2lor4'>
+            <column aggregation='None' caption='Rest Days (bin)' datatype='integer' name='[Rest Days (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='0' formula='[rest_days]' peg='0' size='1' />
+            </column>
+            <column-instance column='[rest_days]' derivation='Count' name='[cnt:rest_days:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Rest Days (bin)]' derivation='None' name='[none:Rest Days (bin):ok]' pivot='key' type='ordinal' />
+            <column caption='Rest Days' datatype='real' name='[rest_days]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0oqfjjg1j2jbx71cr7x3y0s2lor4].[none:Rest Days (bin):ok]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Rest Days (bin):ok]' member='1' />
+              <groupfilter function='member' level='[none:Rest Days (bin):ok]' member='2' />
+              <groupfilter function='member' level='[none:Rest Days (bin):ok]' member='3' />
+              <groupfilter function='member' level='[none:Rest Days (bin):ok]' member='4' />
+              <groupfilter function='member' level='[none:Rest Days (bin):ok]' member='5' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0oqfjjg1j2jbx71cr7x3y0s2lor4].[none:Rest Days (bin):ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0oqfjjg1j2jbx71cr7x3y0s2lor4].[cnt:rest_days:qk]' scope='rows' value='Number of Games' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0oqfjjg1j2jbx71cr7x3y0s2lor4].[cnt:rest_days:qk]</rows>
+        <cols>[federated.0oqfjjg1j2jbx71cr7x3y0s2lor4].[none:Rest Days (bin):ok]</cols>
+        <show-full-range>
+          <column>[federated.0oqfjjg1j2jbx71cr7x3y0s2lor4].[Rest Days (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{B862A1BD-B904-469A-AEBF-B52603716D5C}' />
+    </worksheet>
+    <worksheet name='Underdog Avg Score differential'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='nhl_restdays_processed' name='federated.0oqfjjg1j2jbx71cr7x3y0s2lor4' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0oqfjjg1j2jbx71cr7x3y0s2lor4'>
+            <column caption='[Gf]-[Ga]' datatype='integer' name='[Calculation_6305813569183047684]' role='measure' type='quantitative' user:unnamed='Sheet 5 (2)'>
+              <calculation class='tableau' formula='[gf]-[ga]' />
+            </column>
+            <column caption='Abbr' datatype='string' name='[abbr]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_6305813569183047684]' derivation='Avg' name='[avg:Calculation_6305813569183047684:qk]' pivot='key' type='quantitative' />
+            <column caption='Ga' datatype='integer' name='[ga]' role='measure' type='quantitative' />
+            <column caption='Gf' datatype='integer' name='[gf]' role='measure' type='quantitative' />
+            <column-instance column='[abbr]' derivation='None' name='[none:abbr:nk]' pivot='key' type='nominal' />
+            <column-instance column='[rating_diff]' derivation='None' name='[none:rating_diff:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[team]' derivation='None' name='[none:team:nk]' pivot='key' type='nominal' />
+            <column caption='Rating Diff' datatype='real' name='[rating_diff]' role='measure' type='quantitative' />
+            <column caption='Team' datatype='string' name='[team]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0oqfjjg1j2jbx71cr7x3y0s2lor4].[none:abbr:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:abbr:nk]' />
+              <groupfilter function='except'>
+                <groupfilter function='level-members' level='[none:abbr:nk]' />
+                <groupfilter function='union'>
+                  <groupfilter function='member' level='[none:abbr:nk]' member='&quot;ARI&quot;' />
+                  <groupfilter function='member' level='[none:abbr:nk]' member='&quot;BUF&quot;' />
+                  <groupfilter function='member' level='[none:abbr:nk]' member='&quot;CBJ&quot;' />
+                  <groupfilter function='member' level='[none:abbr:nk]' member='&quot;DET&quot;' />
+                  <groupfilter function='member' level='[none:abbr:nk]' member='&quot;LAK&quot;' />
+                  <groupfilter function='member' level='[none:abbr:nk]' member='&quot;MTL&quot;' />
+                  <groupfilter function='member' level='[none:abbr:nk]' member='&quot;NJD&quot;' />
+                  <groupfilter function='member' level='[none:abbr:nk]' member='&quot;NYI&quot;' />
+                  <groupfilter function='member' level='[none:abbr:nk]' member='&quot;OTT&quot;' />
+                  <groupfilter function='member' level='[none:abbr:nk]' member='&quot;PHI&quot;' />
+                  <groupfilter function='member' level='[none:abbr:nk]' member='&quot;SEA&quot;' />
+                  <groupfilter function='member' level='[none:abbr:nk]' member='&quot;SJS&quot;' />
+                  <groupfilter function='member' level='[none:abbr:nk]' member='&quot;VAN&quot;' />
+                  <groupfilter function='member' level='[none:abbr:nk]' member='&quot;WPG&quot;' />
+                  <groupfilter function='member' level='[none:abbr:nk]' member='%null%' />
+                </groupfilter>
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.0oqfjjg1j2jbx71cr7x3y0s2lor4].[none:rating_diff:qk]' included-values='in-range'>
+            <min>-201.81652594071011</min>
+            <max>-100.0</max>
+          </filter>
+          <filter class='categorical' column='[federated.0oqfjjg1j2jbx71cr7x3y0s2lor4].[none:team:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:team:nk]' member='&quot;Arizona Coyotes&quot;' />
+              <groupfilter function='member' level='[none:team:nk]' member='&quot;Buffalo Sabres&quot;' />
+              <groupfilter function='member' level='[none:team:nk]' member='&quot;Columbus Blue Jackets&quot;' />
+              <groupfilter function='member' level='[none:team:nk]' member='&quot;Detroit Red Wings&quot;' />
+              <groupfilter function='member' level='[none:team:nk]' member='&quot;Los Angeles Kings&quot;' />
+              <groupfilter function='member' level='[none:team:nk]' member='&quot;Montreal Canadiens&quot;' />
+              <groupfilter function='member' level='[none:team:nk]' member='&quot;New Jersey Devils&quot;' />
+              <groupfilter function='member' level='[none:team:nk]' member='&quot;New York Islanders&quot;' />
+              <groupfilter function='member' level='[none:team:nk]' member='&quot;Ottawa Senators&quot;' />
+              <groupfilter function='member' level='[none:team:nk]' member='&quot;Philadelphia Flyers&quot;' />
+              <groupfilter function='member' level='[none:team:nk]' member='&quot;San Jose Sharks&quot;' />
+              <groupfilter function='member' level='[none:team:nk]' member='&quot;Seattle Kraken&quot;' />
+              <groupfilter function='member' level='[none:team:nk]' member='&quot;Vancouver Canucks&quot;' />
+              <groupfilter function='member' level='[none:team:nk]' member='&quot;Winnipeg Jets&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0oqfjjg1j2jbx71cr7x3y0s2lor4].[none:rating_diff:qk]</column>
+            <column>[federated.0oqfjjg1j2jbx71cr7x3y0s2lor4].[none:team:nk]</column>
+            <column>[federated.0oqfjjg1j2jbx71cr7x3y0s2lor4].[none:abbr:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0oqfjjg1j2jbx71cr7x3y0s2lor4].[avg:Calculation_6305813569183047684:qk]' scope='rows' value='Avg Score Differential' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0oqfjjg1j2jbx71cr7x3y0s2lor4].[avg:Calculation_6305813569183047684:qk]</rows>
+        <cols include-empty='true'>[federated.0oqfjjg1j2jbx71cr7x3y0s2lor4].[none:abbr:nk]</cols>
+      </table>
+      <simple-id uuid='{7569A45B-3662-47F4-B59C-71D53701E416}' />
+    </worksheet>
+    <worksheet name='Underdog outcomes'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='nhl_restdays_processed' name='federated.0oqfjjg1j2jbx71cr7x3y0s2lor4' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0oqfjjg1j2jbx71cr7x3y0s2lor4'>
+            <column datatype='string' name='[Game Outcome (group) 1]' role='dimension' type='nominal'>
+              <calculation class='categorical-bin' column='[game_outcome]' new-bin='true'>
+                <bin default-name='true' value='&quot;L&quot;'>
+                  <value>&quot;L&quot;</value>
+                </bin>
+                <bin default-name='true' value='&quot;OTL&quot;'>
+                  <value>&quot;OTL&quot;</value>
+                </bin>
+                <bin default-name='true' value='&quot;W&quot;'>
+                  <value>&quot;W&quot;</value>
+                </bin>
+              </calculation>
+            </column>
+            <column caption='Abbr' datatype='string' name='[abbr]' role='dimension' type='nominal' />
+            <column-instance column='[rating_diff]' derivation='Count' name='[cnt:rating_diff:qk]' pivot='key' type='quantitative' />
+            <column caption='Game Outcome' datatype='string' name='[game_outcome]' role='dimension' type='nominal' />
+            <column-instance column='[abbr]' derivation='None' name='[none:abbr:nk]' pivot='key' type='nominal' />
+            <column-instance column='[game_outcome]' derivation='None' name='[none:game_outcome:nk]' pivot='key' type='nominal' />
+            <column-instance column='[rating_diff]' derivation='None' name='[none:rating_diff:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[team]' derivation='None' name='[none:team:nk]' pivot='key' type='nominal' />
+            <column caption='Rating Diff' datatype='real' name='[rating_diff]' role='measure' type='quantitative' />
+            <column caption='Team' datatype='string' name='[team]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0oqfjjg1j2jbx71cr7x3y0s2lor4].[none:abbr:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:abbr:nk]' />
+              <groupfilter function='except'>
+                <groupfilter function='level-members' level='[none:abbr:nk]' />
+                <groupfilter function='union'>
+                  <groupfilter function='member' level='[none:abbr:nk]' member='&quot;ARI&quot;' />
+                  <groupfilter function='member' level='[none:abbr:nk]' member='&quot;BUF&quot;' />
+                  <groupfilter function='member' level='[none:abbr:nk]' member='&quot;CBJ&quot;' />
+                  <groupfilter function='member' level='[none:abbr:nk]' member='&quot;DET&quot;' />
+                  <groupfilter function='member' level='[none:abbr:nk]' member='&quot;LAK&quot;' />
+                  <groupfilter function='member' level='[none:abbr:nk]' member='&quot;MTL&quot;' />
+                  <groupfilter function='member' level='[none:abbr:nk]' member='&quot;NJD&quot;' />
+                  <groupfilter function='member' level='[none:abbr:nk]' member='&quot;NYI&quot;' />
+                  <groupfilter function='member' level='[none:abbr:nk]' member='&quot;OTT&quot;' />
+                  <groupfilter function='member' level='[none:abbr:nk]' member='&quot;PHI&quot;' />
+                  <groupfilter function='member' level='[none:abbr:nk]' member='&quot;SEA&quot;' />
+                  <groupfilter function='member' level='[none:abbr:nk]' member='&quot;SJS&quot;' />
+                  <groupfilter function='member' level='[none:abbr:nk]' member='&quot;VAN&quot;' />
+                  <groupfilter function='member' level='[none:abbr:nk]' member='&quot;WPG&quot;' />
+                  <groupfilter function='member' level='[none:abbr:nk]' member='%null%' />
+                </groupfilter>
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.0oqfjjg1j2jbx71cr7x3y0s2lor4].[none:rating_diff:qk]' included-values='in-range'>
+            <min>-201.81652594071011</min>
+            <max>-100.0</max>
+          </filter>
+          <filter class='categorical' column='[federated.0oqfjjg1j2jbx71cr7x3y0s2lor4].[none:team:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:team:nk]' member='&quot;Arizona Coyotes&quot;' />
+              <groupfilter function='member' level='[none:team:nk]' member='&quot;Buffalo Sabres&quot;' />
+              <groupfilter function='member' level='[none:team:nk]' member='&quot;Columbus Blue Jackets&quot;' />
+              <groupfilter function='member' level='[none:team:nk]' member='&quot;Detroit Red Wings&quot;' />
+              <groupfilter function='member' level='[none:team:nk]' member='&quot;Los Angeles Kings&quot;' />
+              <groupfilter function='member' level='[none:team:nk]' member='&quot;Montreal Canadiens&quot;' />
+              <groupfilter function='member' level='[none:team:nk]' member='&quot;New Jersey Devils&quot;' />
+              <groupfilter function='member' level='[none:team:nk]' member='&quot;New York Islanders&quot;' />
+              <groupfilter function='member' level='[none:team:nk]' member='&quot;Ottawa Senators&quot;' />
+              <groupfilter function='member' level='[none:team:nk]' member='&quot;Philadelphia Flyers&quot;' />
+              <groupfilter function='member' level='[none:team:nk]' member='&quot;San Jose Sharks&quot;' />
+              <groupfilter function='member' level='[none:team:nk]' member='&quot;Seattle Kraken&quot;' />
+              <groupfilter function='member' level='[none:team:nk]' member='&quot;Vancouver Canucks&quot;' />
+              <groupfilter function='member' level='[none:team:nk]' member='&quot;Winnipeg Jets&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0oqfjjg1j2jbx71cr7x3y0s2lor4].[none:rating_diff:qk]</column>
+            <column>[federated.0oqfjjg1j2jbx71cr7x3y0s2lor4].[none:team:nk]</column>
+            <column>[federated.0oqfjjg1j2jbx71cr7x3y0s2lor4].[none:abbr:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0oqfjjg1j2jbx71cr7x3y0s2lor4].[none:game_outcome:nk]' value='19' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.0oqfjjg1j2jbx71cr7x3y0s2lor4].[none:game_outcome:nk]' value='false' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0oqfjjg1j2jbx71cr7x3y0s2lor4].[Game Outcome (group) 1]' />
+            </encodings>
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0oqfjjg1j2jbx71cr7x3y0s2lor4].[cnt:rating_diff:qk]</rows>
+        <cols include-empty='true'>([federated.0oqfjjg1j2jbx71cr7x3y0s2lor4].[none:abbr:nk] / [federated.0oqfjjg1j2jbx71cr7x3y0s2lor4].[none:game_outcome:nk])</cols>
+      </table>
+      <simple-id uuid='{726FDE8C-9998-4D33-9732-FDB04CAF5E55}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97884' id='7' param='horz' type-v2='layout-flow' w='98616' x='692' y='1058'>
+            <zone h='97884' id='5' type-v2='layout-basic' w='84775' x='692' y='1058'>
+              <zone h='25961' id='3' name='Outcome of games with x days since last game' w='42393' x='43074' y='21983'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='20925' id='9' name='Sum of games with x days since last game' w='42393' x='43074' y='1058'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='46361' id='10' name='Back-to-Back Outcomes by team' w='42382' x='692' y='15889'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='36692' id='12' name='Back-to-Back Winrate Outliers' w='42382' x='692' y='62250'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='27618' id='14' name='Underdog outcomes' w='42393' x='43074' y='47944'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='23380' id='16' name='Underdog Avg Score differential' w='42393' x='43074' y='75562'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='14831' id='17' type-v2='text' w='42382' x='692' y='1058'>
+                <formatted-text>
+                  <run>Jake Daongam Research Questions:
+1) Can the amount of rest days account for any difference in win rates?
+2) Are there any teams that play substantially better or worse on the 2nd of back to back games?
+3) Who are the most consistent underdogs?</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='97884' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='13841' x='85467' y='1058'>
+              <zone h='11375' id='8' name='Outcome of games with x days since last game' pane-specification-id='1' param='[federated.0oqfjjg1j2jbx71cr7x3y0s2lor4].[Game Outcome (group)]' type-v2='color' w='13841' x='85467' y='1058'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='11375' id='11' name='Back-to-Back Outcomes by team' pane-specification-id='0' param='[federated.0oqfjjg1j2jbx71cr7x3y0s2lor4].[none:game_outcome:nk]' type-v2='color' w='13841' x='85467' y='12433'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='11375' id='15' name='Underdog outcomes' pane-specification-id='0' param='[federated.0oqfjjg1j2jbx71cr7x3y0s2lor4].[Game Outcome (group) 1]' type-v2='color' w='13841' x='85467' y='23808'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='8730' id='13' name='Back-to-Back Winrate Outliers' pane-specification-id='0' param='[federated.0pt3l4010fcdba183cfog1snnfkd].[Type (group)]' type-v2='color' w='13841' x='85467' y='35183'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1650' minheight='1650' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='19' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97880' id='18' param='vert' type-v2='layout-flow' w='98614' x='693' y='1060'>
+                <zone h='30066' id='17' type-v2='text' w='42379' x='693' y='1060'>
+                  <formatted-text>
+                    <run>Jake Daongam Research Questions:
+1) Can the amount of rest days account for any difference in win rates?
+2) Are there any teams that play substantially better or worse on the 2nd of back to back games?
+3) Who are the most consistent underdogs?</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='197' h='25562' id='9' is-fixed='true' name='Sum of games with x days since last game' w='42382' x='43072' y='1060'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='196' h='25563' id='3' is-fixed='true' name='Outcome of games with x days since last game' w='42382' x='43072' y='26622'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='11391' id='8' name='Outcome of games with x days since last game' pane-specification-id='0' param='[federated.0oqfjjg1j2jbx71cr7x3y0s2lor4].[Game Outcome (group)]' type-v2='color' w='13853' x='85454' y='1060'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='43344' id='10' is-fixed='true' name='Back-to-Back Outcomes by team' w='42379' x='693' y='31126'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='11391' id='11' name='Back-to-Back Outcomes by team' pane-specification-id='0' param='[federated.0oqfjjg1j2jbx71cr7x3y0s2lor4].[none:game_outcome:nk]' type-v2='color' w='13853' x='85454' y='12451'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='179' h='23377' id='14' is-fixed='true' name='Underdog outcomes' w='42382' x='43072' y='52185'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='11391' id='15' name='Underdog outcomes' pane-specification-id='0' param='[federated.0oqfjjg1j2jbx71cr7x3y0s2lor4].[Game Outcome (group) 1]' type-v2='color' w='13853' x='85454' y='23842'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='188' h='24470' id='12' is-fixed='true' name='Back-to-Back Winrate Outliers' w='42379' x='693' y='74470'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8742' id='13' name='Back-to-Back Winrate Outliers' pane-specification-id='0' param='[federated.0pt3l4010fcdba183cfog1snnfkd].[Type (group)]' type-v2='color' w='13853' x='85454' y='35233'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='180' h='23378' id='16' is-fixed='true' name='Underdog Avg Score differential' w='42382' x='43072' y='75562'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{872B4221-85A1-4BAB-8D22-D756DAC8EDDD}' />
+    </dashboard>
+  </dashboards>
+  <windows pres-mode='true' source-height='51'>
+    <window class='worksheet' name='Sum of games with x days since last game'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D1CF14E8-9696-450A-9538-21193F110F88}' />
+    </window>
+    <window class='worksheet' name='Outcome of games with x days since last game'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.0oqfjjg1j2jbx71cr7x3y0s2lor4].[Game Outcome (group)]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{410F1347-18AA-4583-BCC4-5CEB553BA25A}' />
+    </window>
+    <window class='worksheet' name='Back-to-Back Outcomes by team'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0oqfjjg1j2jbx71cr7x3y0s2lor4].[none:game_outcome:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{03217D43-6304-4A13-B7C3-030165C35D3A}' />
+    </window>
+    <window class='worksheet' name='Back-to-Back Winrate Outliers'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0pt3l4010fcdba183cfog1snnfkd].[Type (group)]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A4B8E99E-C2F1-4523-BC5A-E57A61F34EE3}' />
+    </window>
+    <window class='worksheet' name='Underdog outcomes'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0oqfjjg1j2jbx71cr7x3y0s2lor4].[Game Outcome (group) 1]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{0B3B2529-564B-47AA-9769-600C66AAB251}' />
+    </window>
+    <window class='worksheet' name='Underdog Avg Score differential'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B97D4FFD-9FD9-4DC5-8DCF-52684083597D}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Back-to-Back Outcomes by team'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Back-to-Back Winrate Outliers'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Outcome of games with x days since last game'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sum of games with x days since last game'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Underdog Avg Score differential'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Underdog outcomes'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='9' />
+      <simple-id uuid='{F5079F0D-4DD6-4F41-8A17-0E3684DD2238}' />
+    </window>
+  </windows>
+</workbook>
