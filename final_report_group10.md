@@ -59,8 +59,55 @@ This graph is interesting to delve into, since the 538 algorithm works by settin
 ## Andrei Zipis' Research Questions
 ---
 
-// to do
+The questions that I was interested in answering revolved around things that fans have heard said in the media or from team employees. Common phrases include: "American thanksgiving is a good barometer for the season", "the team will do better when they return home" and, "that game was a nailbiter".
+
+### 1. Can you accurately predict end of season standings from the first 20 games?
+
+![Game_20 vs Game_82 Plot](images/AZ_Q1_game20vsgame82.png)
+
+This graph shows every NHL teams position in the standings at the 20 game mark of the season (which loosely coincides with American Thanksgiving) and the end of the season at the 82nd game mark. At first glance it appears that there are many lines crossing each other which would imply many changes in position. However if you follow a team from start to finish, you'll notice that the change is not that significant. This is more visibile in the following boxplot.
+
+![Change in Standings](images/AZ_Q1_20vs82boxplot.png)
+![Change in Standings Data](images/AZ_Q1_changeStats.png)
+
+The max change in standings was +/- 10 spots and these are considered outliers in the above plot. The interquartile range was 4.25 with a 1st quartile of -2 and a 3rd quartile of 2.25. This tells us that the bulk of teams moved up or down in the standings about 2 spots. Furthermore the standard deviation of 5 tells us that 68% of teams moved up or down at most 5 spots. Considering that there are 32 teams in the NHL, unless you are hovering around 16th place (the playoff bar), it is rare that there will be a significant change from the 20th game to the 82nd. As a result, it appears that the 20 game mark is a fantastic predictor of where a team will end up at the end of the season.
+
+### 2. Do 538's Game Quality scores accurately represent what humans perceive to be a quality game?
+![Targeted Correlation Plot](images/AZ_Q2_heatmap.png)
+In my opinion, a quality NHL game can involve one or more of the following:
+
+- above average number of goals
+- a small goal differential
+- a higher game number (meaning it is closer to the playoffs and teams would be competing harder for points)
+- involves good teams (highly rated)
+
+The above heatmap has been adjusted to include derived values "total goals" and "score closeness" to determine if there is any correlation with game quality. However, only team ratings and attendance seem to have a strong correlation with 538's "Game Quality Rating".
+As a result, I would say that the game quality rating isn't really accurate to what a human would perceive. We will check total goals and score closeness vs. game quality to better see whether there is any relationship.
+
+![Quality vs Goals plot](images/AZ_Q2_Quality_vs_totalGoals.png)
+
+![Quality vs Close Score Plot](images/AZ_Q2_quality_vs_closeScore.png)
+
+
+I would have expected higher total goals to result in a higher game quality. Coincidentally I would have thought that a game with a closer final score would have also resulted in a higher game quality. Neither of those things appear to be true. Ultimately it seems that 538's Game Quality Rating is mostly based on whether the 2 teams playing have high ratings and are therefore "good" teams.
+
+![Quality vs Close Score Plot](images/AZ_Q2_quality_bin100.png)
+
+The caveat to this being when the visualization is filtered by games with a game quality of 90-100. These games had resulted in far closer scores (within 1.6 goals) than the average. Another interesting finding is that of the 14 teams that had games with a quality score of 90-100, only the Vegas Golden Knights missed the playoffs. Ultimately it appears that 538's "Game Quality" score is able to accurately predict the games which include the top teams in the NHL. However, it does not seem able to predict whether the game will be high scoring or a "nailbiter".
+
+### 3. Does a higher fan attendance result in a higher home advantage vs. lower?
+
+![Home Team Advantage](images/AZ_Q3_home_team_advantage.png)
+
+The above plot appears to have a positive regression line implying that higher attendance results in a better home team score differential (positive score differential = win, negative = loss). However, it must also be considered that better teams are likely to have a higher attendance than worse teams, this may play a part in the increase in home performance. On average, home teams are likely to have 0.25 more goals than road teams. This shows that a home team advantage definitely exists in the NHL but it may be hard to discern how much of an effect attendance has on it.
+
+![Home Team Advantage2](images/AZ_Q3_home_team_advantage_poFilter.png)
+
+The above plot is filtered by the 16 teams that made the playoffs in 2022. It shows that as the home attendance goes up, the score differential increases into the positives.
+
 
 ## Summary
 ---
-// to do
+- The 20 game marks is a good predictor of end of season standings as two-thirds (2/3) of teams are likely to find themselves within 5 positions (+/-) of that spot.
+- 538's Game Quality score accurately predicts good teams but is unable to predict whether a specific game will be perceived as "good" by a human
+- Teams with higher attendance win more, but it is difficult to determine how much of that impact is due to the fans. Better teams will attract more people to come watch.
