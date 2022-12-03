@@ -191,6 +191,11 @@ The above plot is filtered by the 16 teams that made the playoffs in 2022. It sh
 
 ## Summary
 ---
+
+Our findings helped confirm the validity of some of the beliefs held around the hockey world. The home team advantage was strongly confirmed during the season, though there was a strange outlier where two-goal games were more often won by visiting teams rather than home teams. The distance between two opponents' home arenas did have an effect, albeit a slight one, on *both* teams performance. Oddly, the further the visiitng team had traveled, the worse the home performed, while the visiting team performed better. With an 82 game season plus the addition of playoff games, the NHL season is a grind and rest days are paramount. Over the season, having 0 days of rest decreased the win rate of a team significantly (-10%). The outlier to this stat are Vancouver with a -25% difference in win rate, Colorado with an 8% increase in win rate, and Tampa with a 20% increase in win rate. Underdogs were determined as teams that had a difference in rating of over 100 and are expected to lose the game. We found that the best underdogs (those who won despite the odds), were Vancouver, followed by Buffalo and Ottawa. Coincidentally, all three of these teams missed the playoffs.
+
+
+
 - The 20 game marks is a good predictor of end of season standings as two-thirds (2/3) of teams are likely to find themselves within 5 positions (+/-) of that spot.
 - 538's Game Quality score accurately predicts good teams but is unable to predict whether a specific game will be perceived as "good" by a human
 - Home teams with higher game attendance win more, but it is difficult to determine how much of that impact is due to the fans. Better teams will attract more people to come watch.
@@ -199,3 +204,5 @@ The above plot is filtered by the 16 teams that made the playoffs in 2022. It sh
 - Having 0 days of rest significantly (-10%) decreases the win rate of a team
 - The outliers to the stat above are Vancouver with a -25% difference in win rate, Colorado with an 8% increase in win rate, and Tampa with a 20% increase in win rate.
 - The best underdogs were Vancouver, followed by Buffalo and Ottawa
+
+The dataset used covered the 2021-2022 NHL season and 
