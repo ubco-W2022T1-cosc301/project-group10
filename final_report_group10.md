@@ -95,7 +95,47 @@ What's interesting about this trend is that, on average, differential does (obvi
 ## Jake Daongam's Research Questions
 ---
 
-// to do
+My questions were based on trying to find things that could help tip the scales for sports betting! Rest days were my main point of focus, as I wanted to see just how much they affected win rates. I also analyzed what I deemed to be underdog games to find the best underdogs.
+
+For a more detailed analysis, you can check out [my notebook](https://github.com/ubco-W2022T1-cosc301/project-group10/blob/main/notebooks/analysis2.ipynb)
+
+### Question 1: Can the amount of rest days account for any differences in win rates?
+
+For this question I had to separate every game based on the amount of rest days between each game. Some of the data was a little hard to deal with as the season had several games postponed due to covid and other events such as the 2022 winter olympics.
+
+![Countplot of Restdays Outcomes](images/JD_Q1b.png)
+
+Above is a plot of the outcomes for each increment of rest days. We can see that the majority of games take place 2 days after the previous game, giving teams 1 day of rest. A discrepency can immediately be seen between the wins and losses/overtime losses between the days, so instead of having to eyeball it I graphed the winrates of each day using a scatterplot shown below.
+
+![Plot of Winrates of each restday](images/JD_Q1c.png)
+
+With this, we can conclude that having 1 day of rest or more helps win games by nearly 10% when compared to having no rest days at all!
+
+### Question 2: Are there any teams that play better on the 2nd of back to backs games? Are there any that play substantially worse?
+
+So far we've covered that on average, having no rest days substantially lowers the win rates of teams. This follow-up question is to check on an individual team level to see if there are any outliers. To do this I first graphed every team's game outcomes during the 2nd game of back-to-backs shown below.
+
+![Plot of Game outcomes Back to Back](images/JD_Q2a.png)
+
+Looking at this graph, there's a lot of variance between the outcomes of games. Some teams have a terrible record but some teams have great records. I pulled these outliers and compared the winrates of their back-to-back games to their winrates in non back-to-back games in the plot below!
+
+![Plot of Back to Back Outliers](images/JD_Q2b.png)
+
+Most of the bad teams had their win rates drop by 15-20% which makes sense as it is close to the league average of a ~10% decrease during back-to-back games. The interesting observation is that the Canucks are apparently disproportionately bad at back to backs, having their win rate decrease by more than half (52% to 25%)! It is also interesting to see that back to back games didn't seem to affect Colorado or Tampa at all, with Tampa's win rate increasing significantly! If I had to guess, it is most likely due to having a stronger team which allows them to have more flexibility to rest players in preparation of back-to-back games.
+
+
+### Question 3: Who are the most consistent underdogs?
+
+To find the most consistent underdogs, I utilized the dataset's team rating system which follows an elo system that changes a teams rating based on their wins and losses. I gathered all of the games that had over a 100 rating difference. For context, a 100 rating difference is about the difference between Vegas (43-31-8) and Arizona (25-50-7). I also added in the goal differential to ensure that the underdogs weren't getting blown out during their losses.
+
+![Underdog plot](images/JD_Q3b.png)
+
+The funny thing about this graph is that in the 2 underdog games that the Kings played, they got absolutely blown out. Vancouver on the other hand clutched up big time in their 2 underdog wins. Winnipeg and Colombus were also interesting as they had a large amount of variance in goal differential.
+
+The most consistent underdogs based on their underdog record and score differentials were:
+- Vancouver
+- Buffalo
+- Ottowa
 
 ## Andrei Zipis' Research Questions
 ---
@@ -156,3 +196,6 @@ The above plot is filtered by the 16 teams that made the playoffs in 2022. It sh
 - Home teams with higher game attendance win more, but it is difficult to determine how much of that impact is due to the fans. Better teams will attract more people to come watch.
 - The home team advantage was strongly confirmed during the season, though there's a strange outlier result in that more two-goal games were won by visiting teams rather than home teams.
 - The distance between two opponents' home arenas did have an effect, albeit a slight one, on *both* teams performances, and correlated with a lower goal differential for the home team.
+- Having 0 days of rest significantly (-10%) decreases the win rate of a team
+- The outliers to the stat above are Vancouver with a -25% difference in win rate, Colorado with an 8% increase in win rate, and Tampa with a 20% increase in win rate.
+- The best underdogs were Vancouver, followed by Buffalo and Ottawa
