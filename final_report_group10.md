@@ -61,6 +61,8 @@ This graph is interesting to delve into, since the 538 algorithm works by settin
 
 The questions that I was interested in answering revolved around things that fans have heard said in the media or from team employees. Common phrases include: "American thanksgiving is a good barometer for the season", "the team will do better when they return home" and, "that game was a nailbiter".
 
+#### [Link to Notebook](https://github.com/ubco-W2022T1-cosc301/project-group10/blob/main/notebooks/analysis3.ipynb)
+
 ### 1. Can you accurately predict end of season standings from the first 20 games?
 
 ![Game_20 vs Game_82 Plot](images/AZ_Q1_game20vsgame82.png)
