@@ -45,3 +45,22 @@ One last thing I wanted to see was how the rating difference changed throughout 
 
 
 This graph is interesting to delve into, since the 538 algorithm works by setting most of the teams around the same rating at the start of the year with a little deviation in ratings based on the previous year. As the year goes on, teams start to deviate from the mean as good teams keep gaining points from winning and bad teams continually lose points from losing games. An interesting question that is brought up in this graph that is covered in Andrei's notebook is "when in the season can we have confidence in the predictions?"
+
+## Jordan Colledge's Research Questions
+---
+
+// to do
+
+## Jake Daongam's Research Questions
+---
+
+// to do
+
+## Andrei Zipis' Research Questions
+---
+
+// to do
+
+## Summary
+---
+// to do
