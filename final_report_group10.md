@@ -140,7 +140,7 @@ The most consistent underdogs based on their underdog record and score different
 ## Andrei Zipis' Research Questions
 ---
 
-The questions that I was interested in answering revolved around things that fans have heard said in the media or from team employees. Common phrases include: "American thanksgiving is a good barometer for the season", "the team will do better when they return home" and, "that game was a nailbiter".
+The questions that I was interested in answering revolved around things that fans have heard said in the media or from team employees. Common phrases include: "American thanksgiving is a good barometer for the season", "the team will do better when they return home" and, "that game was a nailbiter". With the following questions, I attempt to answer whether any of these have truth to them.
 
 #### [Link to Notebook](https://github.com/ubco-W2022T1-cosc301/project-group10/blob/main/notebooks/analysis3.ipynb)
 
