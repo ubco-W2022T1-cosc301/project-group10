@@ -49,7 +49,48 @@ This graph is interesting to delve into, since the 538 algorithm works by settin
 ## Jordan Colledge's Research Questions
 ---
 
-// to do
+My particular research interests were twofold: specifically, I was interested in reconfirming the home team advantage through the season's game data, and in charting the effects on a game's score of the visiting team's distance from home. As a fan of the Vancouver Canucks, one of the teams with the highest average distance from home per game in the NHL, this effect was very interesting to me.
+
+### 1. Was the home team advantage reflected during the 2021-22 season?
+
+The home team advantage is a classic idea in the hockey world, and of course, it does seem to line up with one's logic; a home team will know their arena better, and they'll have the support of their fans on their side. The question, then, is whether the data itself lines up with that expectation.
+
+![Heatmap of score frequencies](images/score-frequency-heatmap.png)
+
+This heatmap displays the relative frequencies of certain game results, based on the final scores of the home and away teams. The empty diagonal from bottom-left to top-right is simply explained by the NHL's lack of tie games since April of 2004; the heavily-populated diagonals next to it come from games won by one goal. These are more common for the simple reason that historically, a little over 23% of NHL games go into overtime or shootout, and inevitably end in one-goal victories; these, in addition to the simple one-goal regulation wins, make for a high frequency of one-goal games.
+
+It's not especially clear through this heatmap which side (home or away) tends to come out ahead, though -- aside from a few noticeable outliers, like the difference in frequency between 5-2 wins -- it's hard to see any particular difference. It may be better to look at the frequencies of certain teams' final scores, and see if there is any difference in distribution between the two.
+
+![Histogram of home team scores](images/home-score-histogram.png)
+![Histogram of away team scores](images/away-score-histogram.png)
+
+As expected, the above graphs are fairly clear -- the home team's score distribution reaches its peak frequency at a higher score than that of the away team. Three goals was the most common score for a home team during the season; for an away team, two and three goals had just about the same frequency. Clearly, then, the home team advantage must exist; more goals, barring a few outlying high-goal wins against a slew of low-scoring losses, must correlate to more wins.
+
+But to drive the final nail into the coffin, we can inspect the distribution of a home team's **goal differential**; or, the difference between their score and their visiting opponents' score in a particular game. If the home team tends to have a positive differential (and thus, score more goals than their opponents), then again, they necessarily must win more games on average.
+
+![Histogram of home team differentials](images/home-diff-histogram.png)
+
+As expected, the home team takes a positive differential more often than a negative differential in almost every case -- except in two-goal games. For some reason, visiting teams won more games by two goals than home teams did over the season. I'm certain that this is simply a strange artifact of this particular season, but I'd be interested in seeing if this trend might have held up in prior years, for reasons unknown. Besides that, that small difference is hugely outweighed by the staggering difference between +3 and -3 differentials.
+
+### 2. Does a greater distance from a visiting team's home arena affect their performance?
+
+It seems self-evident that this would be the case, at first; on average, a visiting team farther from home has traveled a further distance, which means they'll be more tired. Thus, lowered performance. This was indeed reflected in the 2021-22 NHL season, as the following graphs show:
+
+![Home score by opponents' distance from home](images/home-score-by-dist.png)
+![Away score by distance from home](images/away-score-by-dist.png)
+
+The above graphs show the average number of goals scored by home and away teams, respectively, based on the distance between the two teams' home arenas. Both graphs clearly have a negative slope, implying that while a visiting team will certainly perform worse far from home, the *home* team will perform worse as well! This may have arisen as a simple result of the strengths of some teams with high travel distances, as a few Western Conference teams (Calgary Flames, Edmonton Oilers, and the Colorado Avalanche) and the two Florida teams (Tampa Bay Lightning, Florida Panthers) were high performing teams who are relatively far from the average NHL arena. It would stand to reason that the lowered home performance is due to a similar effect.
+
+What's strange, though, is that the home team loses more goals on average than their visiting opponents. This is reflected in the (slightly) sharper slope in the home score graph, indicating a stronger dropoff in goals scored with distance.
+
+![Home goal differential by opponents' distance from home](images/home-diff-by-dist.png)
+![Visiting goal differential by distance from home](images/away-diff-by-dist.png)
+
+As expected, that trend is also reflected in the graphs above, representing the average *goal differential* for the home and visiting teams, respectively. With goal differentials being zero-sum, we're shown an exact reflection of the two graphs across the X-axis.
+
+What's interesting about this trend is that, on average, differential does (obviously) tend to correlate with the likelihood of a win. So, a higher average differential for a team over a period tends to indicate a higher win rate over the same period. This means that, with the negative trend of the home team's differential based on distance, and the positive trend for the visiting team, *visiting teams won more often when they were further from home!* This is a trend that I would never have expected; I'd be interested to explore whether this is the case in more seasons, particularly those where the most "winning" teams in the league aren't some of the ones with the greatest average travel distance.
+
+(And, interestingly enough -- the fact that the home team's goal differential almost always averages to a positive differential reconfirms the home team advantage!)
 
 ## Jake Daongam's Research Questions
 ---
@@ -110,4 +151,6 @@ The above plot is filtered by the 16 teams that made the playoffs in 2022. It sh
 ---
 - The 20 game marks is a good predictor of end of season standings as two-thirds (2/3) of teams are likely to find themselves within 5 positions (+/-) of that spot.
 - 538's Game Quality score accurately predicts good teams but is unable to predict whether a specific game will be perceived as "good" by a human
-- Teams with higher attendance win more, but it is difficult to determine how much of that impact is due to the fans. Better teams will attract more people to come watch.
+- Home teams with higher game attendance win more, but it is difficult to determine how much of that impact is due to the fans. Better teams will attract more people to come watch.
+- The home team advantage was strongly confirmed during the season, though there's a strange outlier result in that more two-goal games were won by visiting teams rather than home teams.
+- The distance between two opponents' home arenas did have an effect, albeit a slight one, on *both* teams performances, and correlated with a lower goal differential for the home team.
